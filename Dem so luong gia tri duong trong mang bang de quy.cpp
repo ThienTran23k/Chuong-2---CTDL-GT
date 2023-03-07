@@ -33,10 +33,10 @@ int demDuong(float a[], int n)
 	{
 	if(n == 0)
 		return 0;
-	int dem = 0;
+	int dem = demDuong(a, n - 1);
 	if(a[n - 1] > 0)
 		dem++;
-	return dem;
+	return dem ;
 	}
 int main()
 {
